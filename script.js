@@ -1,0 +1,5 @@
+let n=0,cart=document.getElementById('cart-count'),toast=document.getElementById('toast');
+function showToast(m){toast.querySelector('span').textContent=m;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000)}
+document.querySelectorAll('.add-to-cart-btn').forEach(b=>b.onclick=function(){cart.textContent=++n;showToast('Enrolled: '+this.closest('.product-card').querySelector('.p-name').textContent);this.innerHTML='<i class="fa-solid fa-circle-check"></i> Enrolled!';this.style.background='#10b981';this.disabled=true});
+document.querySelector('.nav-icons').onclick=e=>e.target.closest('.cart-icon')?showToast(n?n+' course(s) enrolled!':'No courses yet.'):document.getElementById('courses').scrollIntoView({behavior:'smooth'});
+document.querySelectorAll('.p-actions').forEach(a=>{let b=a.querySelector('.icon-btn'),i=b.querySelector('i');b.onclick=()=>{let l=i.classList.contains('fa-solid');i.className=l?'fa-regular fa-heart':'fa-solid fa-heart';i.style.color=l?'':'#ef4444'}});
