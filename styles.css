@@ -1,15 +1,15 @@
-/* === RESET & ROOT === */
+
 :root{--p:#0ea5e9;--pd:#0369a1;--s:#10b981;--bg:#f8fafc;--w:#fff;--d:#0f172a;--m:#64748b;--b:#e2e8f0;--r:#ef4444;--y:#f59e0b;--t:all 0.3s ease}
 *{margin:0;padding:0;box-sizing:border-box;text-decoration:none;list-style:none}
 html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--d);overflow-x:hidden}
 
-/* === BUTTONS === */
+
 .section-title{text-align:center;font-size:2.5rem;font-weight:700;margin-bottom:3rem}
 .btn{display:inline-block;padding:.8rem 1.8rem;font-size:1rem;font-weight:600;border-radius:8px;cursor:pointer;border:none;transition:var(--t);font-family:inherit}
 .btn-primary{background:var(--p);color:#fff}.btn-primary:hover{background:var(--pd);box-shadow:0 4px 12px rgba(14,165,233,.3)}
 .btn-outline{background:transparent;color:var(--d);border:2px solid var(--d)}.btn-outline:hover{background:var(--d);color:#fff}
 
-/* === NAVBAR === */
+
 .navbar{background:var(--w);box-shadow:0 2px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:100}
 .nav-container{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
 .logo{font-size:1.8rem;font-weight:800;color:var(--d)}.logo span{color:var(--p)}
@@ -17,7 +17,7 @@ html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;background:var
 .nav-icons{display:flex;gap:1.5rem;font-size:1.2rem;align-items:center}.nav-icons i{cursor:pointer;transition:var(--t)}.nav-icons i:hover{color:var(--p)}
 .cart-icon{position:relative}.cart-count{position:absolute;top:-8px;right:-10px;background:var(--r);color:#fff;font-size:.7rem;font-weight:700;width:18px;height:18px;display:flex;justify-content:center;align-items:center;border-radius:50%}
 
-/* === HERO === */
+
 .hero{max-width:1200px;margin:2rem auto;background:#e0f7fa;border-radius:20px;display:flex;align-items:center;padding:4rem;gap:2rem}
 .hero-content{flex:1}.hero-subtitle{color:var(--p);font-weight:700;letter-spacing:2px;margin-bottom:1rem}
 .hero-title{font-size:3.5rem;font-weight:800;line-height:1.2;margin-bottom:1.5rem}.hero-title span{color:var(--p)}
@@ -25,13 +25,13 @@ html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;background:var
 .hero-image{flex:1;display:flex;justify-content:center}.hero-image img{max-width:100%;border-radius:20px;box-shadow:0 20px 25px -5px rgba(0,0,0,.1);transform:rotate(-5deg);transition:transform .5s ease}
 .hero:hover .hero-image img{transform:rotate(0deg) scale(1.05)}
 
-/* === FEATURES === */
+
 .features{max-width:1200px;margin:4rem auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;padding:0 2rem}
 .feature-box{background:var(--w);padding:2rem;border-radius:12px;text-align:center;border:1px solid var(--b);transition:var(--t)}
 .feature-box:hover{transform:translateY(-5px);box-shadow:0 10px 15px rgba(0,0,0,.05)}.feature-box i{font-size:2.5rem;color:var(--p);margin-bottom:1rem}
 .feature-box h3{font-size:1.1rem;margin-bottom:.5rem}.feature-box p{color:var(--m);font-size:.9rem}
 
-/* === CATEGORIES === */
+
 .categories{max-width:1200px;margin:5rem auto;padding:0 2rem}
 .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
 .category-card{height:300px;border-radius:16px;background-size:cover;background-position:center;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:2rem;color:#fff}
@@ -42,7 +42,7 @@ html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;background:var
 .cat-content{position:relative;z-index:2}.cat-content h3{font-size:1.5rem;margin-bottom:.5rem}
 .cat-content a{color:#fff;font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:1px}
 
-/* === PRODUCTS === */
+
 .products{max-width:1200px;margin:5rem auto;padding:0 2rem}
 .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2rem}
 .product-card{background:var(--w);border-radius:16px;overflow:hidden;border:1px solid var(--b);transition:var(--t);position:relative}
@@ -59,13 +59,13 @@ html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;background:var
 .p-price{font-size:1.2rem;font-weight:700;color:var(--p);margin-bottom:1.2rem}.old-price{text-decoration:line-through;color:var(--m);font-size:.9rem;font-weight:400;margin-left:.5rem}
 .add-to-cart-btn{width:100%;padding:.8rem;font-size:.95rem}
 
-/* === NEWSLETTER === */
+
 .newsletter{background:var(--pd);color:#fff;padding:5rem 2rem;text-align:center;margin-top:5rem}
 .nl-content{max-width:600px;margin:0 auto}.nl-content h2{font-size:2.2rem;margin-bottom:1rem}.nl-content p{color:#cbd5e1;margin-bottom:2rem}
 .nl-form{display:flex;gap:1rem}.nl-form input{flex:1;padding:1rem 1.5rem;border-radius:8px;border:none;font-family:inherit;font-size:1rem;outline:none}
 .nl-form button{background:var(--s)}.nl-form button:hover{background:#059669}
 
-/* === FOOTER === */
+
 footer{background:#0f172a;color:#94a3b8;padding:5rem 2rem 1rem}
 .footer-grid{max-width:1200px;margin:0 auto 3rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
 .f-col .logo{color:#fff;margin-bottom:1.5rem}.f-desc{line-height:1.6;margin-bottom:1.5rem}
@@ -75,10 +75,10 @@ footer{background:#0f172a;color:#94a3b8;padding:5rem 2rem 1rem}
 .contact-info li{display:flex;align-items:center;gap:1rem}.contact-info i{color:var(--p)}
 .footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid #1e293b;font-size:.9rem}
 
-/* === TOAST === */
+
 .toast{position:fixed;top:20px;right:-400px;background:var(--w);color:var(--d);padding:1rem 1.5rem;border-radius:8px;box-shadow:0 10px 25px rgba(0,0,0,.1);border-left:5px solid var(--s);display:flex;align-items:center;gap:1rem;font-weight:600;z-index:1000;transition:right .4s cubic-bezier(.175,.885,.32,1.275)}
 .toast.show{right:20px}.toast i{color:var(--s);font-size:1.5rem}
 
-/* === RESPONSIVE === */
+
 @media(max-width:992px){.hero{flex-direction:column;text-align:center;padding:2rem;margin:1rem}.hero-buttons{justify-content:center}.hero-image img{transform:none;margin-top:2rem}.category-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.nl-form{flex-direction:column}.footer-grid{grid-template-columns:1fr}}
